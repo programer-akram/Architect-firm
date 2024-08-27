@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-<header class="bg-gradient-to-b from-slate-200 to-slate-50">
+<header class="bg-gradient-to-b from-slate-200 to-slate-50 ">
     <nav>
         <div class="navbar flex justify-between ">
             <div class="navbar-start">
@@ -31,8 +31,8 @@
               </ul>
             </div>
             <div class="navbar-end hidden lg:flex gap-4">
-                <div class="btn"><i class="fa-solid fa-magnifying-glass"></i></div>
-                <div class="btn"><i class="fa-solid fa-cart-shopping"></i></div>
+                <div class="btn rounded-full"><i class="fa-solid fa-magnifying-glass"></i></div>
+                <div class="btn rounded-full"><i class="fa-solid fa-cart-shopping"></i></div>
               <div><a class="btn bg-[#90eb28] rounded-3xl ">Book Consult<i class="fa-solid fa-arrow-right -rotate-45 text-white   rounded-full bg-black w-8 h-8 inline-flex justify-center items-center " ></i></a></div>
             </div>
             <div class="dropdown">
@@ -63,7 +63,7 @@
             <p class="py-6">
                 The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.
             </p>
-            <button class="btn btn-primary">View Details<i class="fa-solid fa-arrow-right -rotate-45 " ></i></button>
+            <button class="btn btn-primary mb-20">View Details<i class="fa-solid fa-arrow-right -rotate-45 " ></i></button>
           </div>
         </div>
       </div>
@@ -195,7 +195,7 @@
 
       <!-- grids -->
       <div class="grid grid-cols-1  lg:grid-cols-12 gap-6 mt-12">
-        <div class="lg:flex md:flex  shadow-xl col-span-12  lg:col-span-8 items-center justify-between gap-6 rounded-xl p-4">
+        <div class="lg:flex order-1  shadow-xl col-span-12  lg:col-span-8 items-center justify-between gap-6 rounded-xl p-4">
           <div class="lg:h-full">
             <img class="w-full h-full" src="assets/img1.png" alt="">
           </div>
@@ -207,14 +207,14 @@
          
 
         </div>
-        <div class="shadow-xl md:col-span-6 md:h-[200px] rounded-xl p-4 col-span-12 lg:col-span-4">
+        <div class="shadow-xl order-2 rounded-xl p-4 col-span-12 lg:col-span-4">
           <img class="w-full h-full" src="assets/img2.png" alt="">
         </div>
-        <div class="shadow-xl rounded-xl p-4 col-span-12 md:h-[200px] md:col-span-6 lg:col-span-3">
+        <div class="shadow-xl order-5 rounded-xl p-4 col-span-12 lg:col-span-3">
           <img class="w-full h-full" src="assets/img3.png" alt="">
         </div>
 
-        <div class="lg:flex  shadow-xl col-span-12  lg:col-span-6 items-center justify-between gap-6 rounded-xl p-4">
+        <div class="lg:flex order-4 shadow-xl col-span-12  lg:col-span-6 items-center justify-between gap-6 rounded-xl p-4">
           <div class="lg:h-full">
             <img class="w-full h-full " src="assets/img4.png" alt="">
           </div>
@@ -226,12 +226,14 @@
          
 
         </div>
-        <div class="shadow-xl rounded-xl p-4 col-span-12  lg:col-span-3">
+        <div class="shadow-xl order-3 rounded-xl p-4 col-span-12  lg:col-span-3">
           <img class="w-full h-full" src="assets/img5.png" alt="">
         </div>
-        <div class="shadow-xl rounded-xl p-4 col-span-12  lg:hidden">
-          <img class="w-full h-full" src="assets/article2.png" alt="">
+
+        <div class="shadow-xl order-6 rounded-xl p-4 col-span-12  lg:hidden">
+          <img class="w-full h-full" src="assets/img5.png" alt="">
         </div>
+
         
       </div>
 
@@ -277,6 +279,47 @@
     </div>
   </div>
 </div>
+
+<!-- discount section -->
+<div class="hero bg-gradient-to-t from-slate-200 to-slate-50 min-h-screen">
+  <div class="hero-content text-center flex-col">
+    <div class="max-w-md">
+      <h1 class="text-5xl font-bold">Book our consult with 30% flash discount</h1>
+      </div>
+      <!-- countdown section -->
+      <div class="grid auto-cols-max grid-flow-col gap-5 mt-4 mb-4">
+        <div class="bg-neutral rounded-box text-neutral-content flex flex-col p-2">
+          <span class="countdown font-mono text-5xl">
+            <span style="--value:15;"></span>
+          </span>
+          days
+        </div>
+        <div class="bg-neutral rounded-box text-neutral-content flex flex-col p-2">
+          <span class="countdown font-mono text-5xl">
+            <span style="--value:10;"></span>
+          </span>
+          hours
+        </div>
+        <div class="bg-neutral rounded-box text-neutral-content flex flex-col p-2">
+          <span class="countdown font-mono text-5xl">
+            <span style="--value:24;"></span>
+          </span>
+          min
+        </div>
+        <div class="bg-neutral rounded-box text-neutral-content flex flex-col p-2">
+          <span class="countdown font-mono text-5xl">
+            <span style="--value:${counter};"></span>
+          </span>
+          sec
+        </div>
+      </div>
+
+
+      <div><a class="btn bg-[#90eb28] rounded-3xl ">Book Consult<i class="fa-solid fa-arrow-right -rotate-45 text-white   rounded-full bg-black w-8 h-8 inline-flex justify-center items-center " ></i></a></div>
+    </div>
+
+</div>
+
 
 </main>
 
